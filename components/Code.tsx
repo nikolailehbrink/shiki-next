@@ -1,5 +1,8 @@
 import { codeToHtml } from "shiki";
-import { transformerNotationHighlight } from "@shikijs/transformers";
+import {
+  transformerNotationHighlight,
+  transformerNotationDiff,
+} from "@shikijs/transformers";
 import type { BundledLanguage, BundledTheme } from "shiki";
 
 type Props = {
@@ -15,7 +18,7 @@ export default async function Code({
   const html = await codeToHtml(code, {
     lang,
     theme,
-    transformers: [transformerNotationHighlight()],
+    transformers: [transformerNotationHighlight(), transformerNotationDiff()],
   });
 
   return (
