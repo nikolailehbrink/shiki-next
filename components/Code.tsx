@@ -4,6 +4,7 @@ import {
   transformerNotationDiff,
 } from "@shikijs/transformers";
 import type { BundledLanguage, BundledTheme } from "shiki";
+import CopyToClipboard from "./CopyToClipboard";
 
 type Props = {
   code: string;
@@ -30,6 +31,7 @@ export default async function Code({
           <span className="-mb-[calc(0.5rem+2px)] rounded-t-lg border-2 border-white/5 border-b-neutral-700 bg-neutral-800 px-4 py-2 ">
             {filename}
           </span>
+          <CopyToClipboard code={code} />
         </div>
         <div
           className="border-t-2 border-neutral-700 text-sm [&>pre]:overflow-x-auto [&>pre]:!bg-neutral-900 [&>pre]:py-3 [&>pre]:pl-4 [&>pre]:pr-5 [&>pre]:leading-snug [&_code]:block [&_code]:w-fit [&_code]:min-w-full"
