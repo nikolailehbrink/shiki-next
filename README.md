@@ -1,3 +1,10 @@
+# Modern Syntax Highlighting with Shiki in Next.js 14
+
+Template project for integrating Shiki syntax highlighting into Next.js 14 projects.
+
+![image](https://github.com/nikolailehbrink/shiki-next/assets/38915700/45db8745-e1e2-4407-9d00-5184008e2fff)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
